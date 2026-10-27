@@ -1,0 +1,58 @@
+Propuesta visual consolidada de la web del apartamento de Gandía
+Fecha: 23 de octubre de 2026
+Método: herramienta integrada image_gen; sin CLI.
+Imagen seleccionada: web-gandia-propuesta-v5-consolidada.png
+Estado: propuesta estática pendiente de valoración. La representación generada de la ubicación es orientativa; la geometría definitiva se reconstruirá desde los originales, respetando los siete bloques y accesos.
+Hero confirmado: Apartamento en (h3), Gandía Playa (h1), con la fotografía de las vistas.
+Galería confirmada: El apartamento...; estructura asimétrica según el pantallazo del usuario.
+Nombre propuesto para la franja práctica: De un vistazo. Puede funcionar sin título visible.
+Se mantiene el módulo de ubicación elegido por el usuario. La infografía anterior no se considera aprobada.
+Fotografías originales y plano original deben usarse directamente en la implementación. No se usarán las reinterpretaciones generadas como planos definitivos.
+Las fechas y tarifas son ejemplos. Orientación de terraza y tiempo a pie quedan pendientes.
+
+Referencias:
+1. referencias/galeria-preferida.png
+2. referencias/modulo-ubicacion-preferido.png
+3. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/Material para la IA/Galeria de fotos/00 Vistas-1.jpeg
+4. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/Material para la IA/Ubicación/00 Ubicacion-3.jpeg
+5. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/Material para la IA/Ubicación/00 Ubicacion-2.jpeg
+
+PROMPT DE LA IMAGEN SELECCIONADA
+
+Use case: ui-mockup. Create ONE consolidated high fidelity full-page DESKTOP website image for a real apartment in Playa de Gandía. Wide desktop layout on a tall portrait canvas about 1600x3200 pixels, straight-on screenshot, no device frame. All Spanish text crisp and correct.
+
+REFERENCE ROLES, IMPORTANT:
+Input1 is the user's PREFERRED gallery structure and photo treatment. Follow its gallery closely: heading and subtitle at left, horizontal room tabs at right, one large living-room photograph on the left, a narrower bedroom photograph in center, a narrow orange kitchen photograph on right, labels underneath. Preserve these authentic room photographs and layout. This reference is NOT an instruction to retain old titles.
+Input2 is ONLY the user's preferred LOCATION MODULE COMPOSITION: text/selector on left, contextual location image in center, urbanization plan panel at right. Its invented 3D geographic illustration and distorted plan are WRONG. Do NOT reuse the wrong geography, building locations, shapes or invented infographic.
+Input3 is the actual panoramic view from the apartment. Use as primary HERO photograph, preserve its green fields, sea, shoreline and distant Cullera.
+Input4 is the REAL urbanization plan, authoritative for all site geometry and labels. Incorporate this exact plan as a clean flat diagram, preserving all geometry and relative proportions. It is a WIDE landscape diagram about 2.25:1, never stretch or squeeze it into a square. Seven blocks progress diagonally from lower-left to upper-right as G,F,E,D,C,B,A. D is central FOURTH block. A horizontal garage access lane runs along the top. A narrow perpendicular garage lane descends just right of D to the bottom boundary. Parking space marked in source is just above D. Two circular pools on lower-right: SMALL circle to the left and larger circle to the right. Preserve the actual shapes and positioning. Label blocks simply G F E D C B A for crisp readability. D may be gold-filled; add a small external legend "D · Tu apartamento". Do not alter pool sizes or block sequence.
+Input5 is the actual aerial location image. It is authoritative for geography. For location module, use a top-down aerial-view treatment matching this image faithfully; do NOT invent a row of 3D apartment blocks along the beach. Retain the real land, roads, buildings, shoreline and sea arrangement. Remove the LARGE RED arrow and red rectangle, and replace the rectangle only with a refined muted-gold outline around exactly the same development footprint. Label it "Gandiazar IV". This is an outline of the development, not a claim to exact apartment coordinates. Do not invent a walking path or a street name. The map should be integrated harmoniously, with slightly softened natural colors, not a generic Google Maps iframe.
+
+APPROVED COPY AND HIERARCHY:
+Hero has exactly these TWO text lines with distinct hierarchy:
+small H3-style line: "Apartamento en"
+very large H1-style line: "Gandía Playa"
+Use the literal accent in Gandía. The H1 should be about 3-4 times larger than H3 and fit on one line, prominently lower-left on the panoramic view. No other hero slogan, no "Mar y calma", no "Ahuir sin prisa", no subtitle paragraph. One small CTA "Ver disponibilidad". No literal HTML tags printed in the image.
+Gallery section title EXACTLY "El apartamento..." including the trailing ellipsis. Subtitle "Apartamento reformado, dos dormitorios y terraza."
+Room tabs "Todos", "Salón", "Dormitorios", "Cocina", "Baño", "Terraza".
+Location module title "Todo, a un paseo." and selector "Apartamento", "Parking", "Piscinas", "Playa". Keep the visual module from input2 but use the REAL map and plan inputs4/5.
+Practical-info strip is called "De un vistazo" internally, but show NO title for this strip so it remains compact.
+
+ART DIRECTION:
+Minimal elegant coastal site, limestone #EAE5DC and off-white #F7F3EB, muted sunset-gold #B78B4A, deep marine navy #173044 text and accents. No saturated cyan or green section backgrounds. Refined readable serif headlines, clean sans serif UI, subtle separators and generous negative space. Follow the user's preferred gallery simplicity rather than redesigning it. Header ivory, compact (48px sticky-style), with identity "Apartamento en Gandía", navigation "El apartamento", "Entorno", "Disponibilidad", "Contacto", button "Consultar fechas". Header must not obscure panorama.
+Hero full-width scenic photograph as input3, big meaningful photo area. Subtle shading behind text only if needed.
+Directly below hero, warm limestone practical-info band in four columns with restrained icons: "A pie a la orilla" / "Tiempo por confirmar" / small "Playa a 100 m"; "Sol en la terraza" / "Orientación por confirmar"; "Parking incluido" / "Dentro de la urbanización"; "Viento y oleaje" / "Consultar previsión →". Do NOT invent actual walking minutes, sun orientation or live weather.
+Gallery off-white and EXACT structure of input1, three real photographs, no fake bedroom or kitchen. Small discreet expand icons on photographs for future lightbox; link "Ver todas las fotografías →". Main labels "Salón", "Dormitorio principal", "Cocina equipada".
+Location follows gallery, full-width warm sand. Compose from input2's overall hierarchy, BUT swap its incorrect central illustration for faithful actual aerial source input5, with exact muted-gold outline around the existing red-box region. Real site plan input4 on the right in a horizontal correctly proportioned inset, complete and legible. Caption "Ubicación de la urbanización" below aerial. Plan heading "Explora la urbanización". Gold selected "Apartamento" control and gold D on plan demonstrate linked hover state; other controls dark navy. Do not duplicate a single block letter or infer floor plan inside the apartment.
+Availability section deep navy surrounding warm-white panels, heading "Elige tus días". Label "Calendario y tarifas de ejemplo". Calendar left and inquiry form right.
+June2027 calendar, exact weekday columns L M X J V S D:
+blank,1,2,3,4,5,6
+7,8,9,10,11,12,13
+14,15,16,17,18,19,20
+21,22,23,24,25,26,27
+28,29,30.
+Selected interval12-19 inclusive in gold shading with endpoints strong gold, and 23-26 grey struck through. Small season dots, legend "Disponible", "Reservado", "Selección". Example rates "Baja 70 €/noche", "Media 90 €/noche", "Alta 120 €/noche".
+Form heading "Consulta tu estancia". Arrival12/06/2027, departure19/06/2027, name, email or phone, message. Show "7 noches × 90 €" and "Total 630 €". CTA "Solicitar información". "Consulta sin compromiso. Confirmación personal." Alternative contact actions "Llamar" and "WhatsApp". No online payment, no actual contact number, no automatic booking.
+Minimal footer "robertoferrero.es/gandia", "Acceso propietario".
+Avoid unverified facilities, real prices, fabricated room images, any false geography, ratings, discount claims and watermarks. This is a static design proposal, so retain example labels. Priority: EXACT requested hero and gallery text, authentic main view and gallery layout, and correcting location illustration with the two authoritative source images rather than stylized inventions.
+

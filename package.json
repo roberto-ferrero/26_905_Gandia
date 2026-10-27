@@ -1,0 +1,19 @@
+{
+  "name": "gandia-playa",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Web del apartamento de Gandía Playa. Prototipo estático.",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.js",
+    "assets": "node scripts/prepare-assets.mjs"
+  },
+  "devDependencies": {
+    "sharp": "0.35.5",
+    "vite": "8.3.5"
+  }
+}

@@ -1,0 +1,49 @@
+Infografía de ubicación en 3D de Gandiazar IV
+Fecha: 23 de octubre de 2026
+Método: herramienta integrada image_gen; sin CLI.
+Archivo final: ubicacion-3d-infografia-v1.png
+Objetivo: recrear la vista 3D de Google Maps aportada por el usuario con el lenguaje gráfico de la infografía, priorizando la distribución del lugar y la perspectiva.
+Estado: recreación ilustrada pendiente de validación por el propietario. No es un modelo 3D medido ni acredita coordenadas exactas o dimensiones. La etiqueta identifica la urbanización, no una cubierta concreta del Bloque D.
+Fuente de geometría: captura de Google Maps facilitada por el usuario, referencias/vista-google-maps-3d.png.
+Referencia de estilo: referencias/estilo-infografia-mapa.png. No se toma su distribución geográfica como referencia.
+Revisión aplicada: sustituir una pista inventada en el jardín de la urbanización vecina por la piscina visible en la captura.
+La nueva imagen se conserva como archivo independiente y todavía no reemplaza el módulo de ubicación de la web.
+
+PROMPT INICIAL
+
+Use case: style-transfer / infographic-diagram.
+Task: Recreate the supplied Google Maps 3D view with the rendering style of the supplied infographic, prioritizing geographical and architectural fidelity ABOVE stylistic simplification. Output ONE standalone high-resolution landscape illustration, approximately 2:1 aspect ratio, ideally 3072x1536. This is an illustrated 3D LOCATION VIEW, NOT a website screenshot.
+
+INPUT1: AUTHORITATIVE GEOMETRY / EDIT TARGET. The Google Maps screenshot. Every geographic and architectural placement must come from this image. Treat it as a locked camera projection to trace faithfully, not as loose inspiration.
+INPUT2: STYLE REFERENCE ONLY. Warm limestone buildings, muted green orchards, warm sand, deep desaturated sea, fine charcoal outlines, clean architectural infographic rendering, tiny gold callout. Its geography, building shapes, building heights, pools and block arrangement are WRONG and MUST NOT be transferred.
+
+COMPOSITION AND CAMERA:
+Use the visible mapped scene of INPUT1, cropped to remove browser chrome, bookmarks, left Google sidebar, search bar, business filters and navigation widgets. Approximate mapped-scene crop corresponds to x90..1830 and y165..965 of the1915x985 source. Same camera angle, tilt, yaw, height, perspective and proportions. Do not rotate north-up, do not change to top-down, do not invent an isometric camera, do not make a floating diorama or island. The finished artwork should align spatially with the source if overlaid after uniform scaling. Land and buildings fill the image edge-to-edge, no border or poster background. Sea is upper-right, orchards upper-left, shoreline runs diagonally from upper central area toward lower-right, urban buildings occupy center and foreground exactly as in source. No horizon added.
+
+GEOMETRY LOCK — CRITICAL:
+- Faithfully trace all visible building footprints, roofs, HEIGHTS, balconies/terraces, street alignments, intersections, sports courts, pools, gardens, orchard field boundaries, dunes, beach and shore.
+- Preserve the number, placement, shapes, proportions and relative heights of recognizable apartment buildings. These are tall real residential apartment towers and slabs with red/terracotta roofs and pale facades, NOT uniform low-rise white cuboids.
+- Especially preserve Gandiazar IV at left-of-center along the boundary between orchards and urban area: the connected stepped row of multiple tall/slender residential volumes, with different visible heights and staggered facade. Do not relocate it next to the shoreline. Do not turn it into seven detached houses.
+- Its TWO circular swimming pools must remain in their actual source positions on the inner/right-side corner of this development beside C.Valldigna: the small pool lies left/lower-left of the larger pool. Under the oblique camera they naturally appear elliptical. They are small relative to the buildings, not giant circles. Do not move them into the orchard or other developments.
+- Keep the broad C.Valldigna street diagonal across the central/foreground scene and the C.Rioja street on the left; retain the road along the northern edge, its junctions and spaces between developments.
+- Preserve the other long red-roofed high-rise buildings on the right side of C.Valldigna, the seaside tall slab buildings, the distinct low terracotta-roof houses toward right-center, the blue/green rectangular sports courts and the gardens visible between them. Keep the large open green plot near lower-left/center.
+- Orchard rows form real angled grids and uneven rectangular field boundaries matching the source. Preserve dune strip width and walking access shapes; beach lies between dunes/buildings and sea.
+- Clean up only labels and photogrammetric noise. Never move actual physical objects to make a prettier composition. Preserve shadows as subtle architectural shading without obscuring structures.
+
+STYLE TRANSFER:
+Match input2's refined editorial map illustration: clean pale limestone and warm off-white facades, restrained warm terracotta roof accents, desaturated olive/sage orchard trees, warm sand and cream beach, deep blue-grey/navy sea and fine muted wave lines. Pool/court blues subdued and differentiated from sea, no electric cyan. Thin precise dark linework defines architecture. Subtle paper-like matte texture and soft ambient-occlusion shadows. Simplify noisy photo TEXTURE and individual foliage into small clean forms while preserving ALL urban geometry and a recognizable number of floors/balcony bands. Detailed architectural cartographic illustration, carefully drawn, NOT photoreal satellite imagery, NOT cartoon, NOT rough painterly, NOT low-poly. Enough true detail for the owner to recognize the entire neighborhood immediately.
+
+LABELS:
+Remove Google UI pins, business names, restaurant labels and unrelated screenshot text, retaining the actual physical scene beneath.
+Use only restrained purposeful labels: "Gandiazar IV" in a small muted-gold callout with a delicate leader pointing to the correct connected development at left-of-center. Do NOT identify individual "Bloque D" or an exact unit, because its precise roof has not been independently established in this oblique screenshot.
+Optional unobtrusive navy street labels "C. Valldigna" and "C. Rioja" aligned to their actual streets, only if readable.
+One elegant small label "Playa del Ahuir" over the beach/sea area.
+No large headline, no website navigation, no button, no legend, no fake walking route, no metric distances, no invented north arrow. Keep discreet source attribution "Google Maps" along bottom edge.
+PRIORITY ORDER: 1 exact geography/camera, 2 actual building footprints and heights and correct pools, 3 elegant infographic rendering, 4 minimal typography. Do not sacrifice accuracy to copy the incorrect low-rise composition of the style reference. Deliver one faithful full-scene illustrated recreation.
+
+PROMPT DE CORRECCIÓN FINAL
+
+Use case: precise-object-edit / style-transfer. Input1 is a finished illustrated aerial map. Input2 is the authoritative original Google Maps 3D screenshot.
+Preserve all of Input1: camera, crop, every building, labels, palette, architectural infographic style, trees, roads, shoreline, main Gandiazar IV and its two circular pools, and the real sports courts. Correct ONLY this specific error:
+In the landscaped development at LOWER CENTER-RIGHT of Input1, to the RIGHT of the tall angular/curved red-roof apartment slab and below the rows of low terracotta-roof houses, a blue rectangular TENNIS COURT has been drawn on the lawn. This is actually a SWIMMING POOL in Input2, near the "Apartamentos Cármenes Gandía Playa by Valentia" label. Locate that exact area by corresponding buildings and garden. Replace that mistaken blue tennis court with the actual blue angular/irregular polygonal swimming pool shown in the screenshot, with its light stone coping and small paved surround, at the same physical location, perspective and scale as the actual original pool. Match its irregular footprint accurately. NO court markings or net on this pool. Do not modify the genuine blue tennis/sports courts just LEFT of the angular slab, nor any other courts elsewhere. Do not change buildings or vegetation to fit this correction. Continue the exact same warm limestone/terracotta, muted green, desaturated navy infographic rendering. This one physical feature correction must improve geographic accuracy while leaving everything else unchanged.
+

@@ -1,0 +1,96 @@
+Propuesta visual 6 de la web del apartamento de Gandía
+Fecha: 23 de octubre de 2026
+Método: herramienta integrada image_gen; sin CLI.
+Imagen final: web-gandia-propuesta-v6-mar-arena.png
+Estado: diseño estático pendiente de valoración. La web todavía no está implementada.
+Cambios solicitados: integrar la infografía 3D y utilizar tonos del pantallazo mar/arena como fondos alternos de las secciones.
+Textos y estructura conservados: Apartamento en / Gandía Playa en el hero; franja De un vistazo; galería El apartamento... con salón grande, dormitorio y cocina.
+Infografía utilizada: ubicacion-3d-infografia-v1.png. El plano original conserva su acceso mediante un enlace en el módulo.
+Paleta obtenida por medias de muestras de 5x5 píxeles de referencias/paleta-mar-arena.png:
+Mar profundo: #2E6982
+Mar medio: #417E8C
+Agua somera: #699597
+Orilla: #DDD3C7
+Arena: #F4DFBD
+Arena clara: #F5E0C0
+Aplicación propuesta: cabecera clara; hero fotográfico; franja azul; galería arena; ubicación azul medio; calendario orilla clara; pie azul.
+Se emplean también un blanco cálido y un azul oscurecido para contraste de texto y campos.
+Las fechas y tarifas son ejemplos; orientación y tiempo a pie están pendientes de confirmar.
+
+Referencias, en orden:
+1. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/_Repos/26_905_Gandia/docs/diseno/web-gandia-propuesta-v5-consolidada.png
+2. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/_Repos/26_905_Gandia/docs/diseno/ubicacion-3d-infografia-v1.png
+3. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/_Repos/26_905_Gandia/docs/diseno/referencias/paleta-mar-arena.png
+4. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/Material para la IA/Galeria de fotos/00 Vistas-1.jpeg
+5. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/Material para la IA/Galeria de fotos/03 Salon.jpeg
+
+PROMPT UTILIZADO
+
+Use case: ui-mockup.
+Create ONE polished, high fidelity, complete DESKTOP apartment website design image, a straight-on full-page screenshot, tall portrait canvas around 1600x3200 pixels but wide desktop multi-column layout. This is a new version of the established website, not a new brand. All text in Spanish, exact and readable.
+
+INPUT ROLES:
+Input1: the previous consolidated website, authoritative for the requested hero text, gallery layout and main functionality.
+Input2: the newly approved detailed illustrated 3D infographic of the actual neighborhood. This MUST be used prominently inside the LOCATION module. Insert this actual artwork, preserving its composition, perspective, connected tall Gandiazar IV building, surrounding buildings, two swimming pools, sports courts, streets, orchards and coast. Do NOT draw an alternative simplified map. Do NOT use the old aerial screenshot or previous inaccurate block diagram. Keep its wide 2:1 aspect ratio, no stretching, no narrow crop that hides the development. Its geographic content is locked.
+Input3: user's sea-and-sand color reference. This determines ALL section background colors and UI palette.
+Input4: actual panoramic view from the apartment. This MUST be the main HERO photograph. Do NOT use the infographic in the hero.
+Input5: authentic living room photograph. Use in the large left gallery slot. The authentic bedroom and orange kitchen photos are visible in input1; keep them in their same slots and preserve their actual decor.
+
+USER PRIORITIES:
+Use the new illustrated infographic in the website.
+Use a color palette taken from the beach/water crop.
+Alternate full-width SECTION BACKGROUNDS between distinct tones of that palette.
+Preserve the previously selected text and gallery structure.
+
+PALETTE, sampled from input3:
+Deep sea blue #2E6982.
+Mid sea blue #417E8C.
+Shallow water grey-blue #699597.
+Wet-shore limestone #DDD3C7.
+Warm pale sand #F4DFBD.
+Light sand #F5E0C0.
+A soft warm foam-white tint may be used for fields and panels, with a darkened sea-blue #183F50 for readable body text. Keep the tones subtle and natural, no electric cyan, neon turquoise, black sections, olive green UI, saturated orange or unrelated purple. The natural greens and terracotta in photographs and infographic remain untouched.
+
+ART DIRECTION:
+Understated elegant Mediterranean editorial design, generous spacing, sophisticated large serif headings and clean sans-serif utility text, thin borders and subtle line icons. Photographs dominate. Distinct FLAT colored section backgrounds, not continuous gradients, no blobs or ornamental shapes. Few rounded cards, no excessive shadows. Dark blue buttons on light sections; sand buttons on blue sections. Keep high contrast.
+
+PAGE ORDER AND EXACT CONTENT:
+1. Slim FOAM-WHITE navigation (approximately 48px sticky-style, does not obstruct photos). Identity "Apartamento en Gandía". Links "El apartamento", "Entorno", "Disponibilidad", "Contacto". Deep-sea CTA "Consultar fechas".
+
+2. Full-width large HERO, actual panorama from input4. Same green fields, sea, distant Cullera and sky, faithfully photographed, not illustrated.
+Exactly TWO headline lines, lower left:
+small H3-style "Apartamento en"
+very large H1-style "Gandía Playa"
+Both warm white, H1 roughly 3-4 times H3 size and on one line. Do not print HTML tags. No slogan or extra paragraph. One light-sand CTA "Ver disponibilidad" with dark-blue text. Keep the horizon and view open.
+
+3. DEEP-SEA BLUE #2E6982 practical-info strip, a clear cool change after photo. Four equal columns with fine warm-sand icons and creamy-white labels. No visible section title; internally it is "De un vistazo".
+"A pie a la orilla" / "Tiempo por confirmar" / small "Playa a 100 m".
+"Sol en la terraza" / "Orientación por confirmar".
+"Parking incluido" / "Dentro de la urbanización".
+"Viento y oleaje" / "Consultar previsión →".
+Do not invent minutes, sun orientation or current weather.
+
+4. WARM SAND #F4DFBD gallery section, clearly warm after blue strip. Title EXACTLY "El apartamento..." and subtitle "Apartamento reformado, dos dormitorios y terraza."
+Match the preferred gallery composition from input1: title left, room filter tabs right "Todos", "Salón", "Dormitorios", "Cocina", "Baño", "Terraza". Three aligned photographs: LARGE wide living room at left (input5), narrower real bedroom in middle and narrow real orange/white kitchen at right (from input1). Labels underneath "Salón", "Dormitorio principal", "Cocina equipada". Small expand icon in each photo for lightbox. Link "Ver todas las fotografías →". Photos never recolored to match UI palette. Ample top/bottom breathing space, minimal borders.
+
+5. MID-SEA BLUE #417E8C location section, clearly cool after sand. Cream heading "Todo, a un paseo." and concise text "Playa, naturaleza y Gandía a tu alrededor." This is the centerpiece below gallery.
+A narrow left column contains four compact controls "Apartamento", "Parking", "Piscinas", "Playa", selected Apartamento in light sand with dark-blue lettering, others outlined with cream lettering. On its RIGHT, a large WIDE 2:1 landscape inset containing the ENTIRE actual infographic input2, at least 78% of content width. The illustration should occupy a generous area and be legible, with no invented re-rendering of geography. Do not put a plan card over it or cut off buildings. Use the existing Gandiazar IV label on the illustration and avoid extra fake pins. Preserve selected-building placement.
+Below the image, one restrained light text line "Gandiazar IV · Bloque D · Planta 10" and an unobtrusive link "Ver plano de la urbanización ↗" for the original plan. This link preserves access to the plan without cramming the inaccurate generated old inset into this design. The location module is driven by the real new infographic, not the old aerial screenshot.
+
+6. LIGHT SHORE #DDD3C7 / foam section for availability, distinctly light after blue. Heading "Elige tus días", small visible "Calendario y tarifas de ejemplo". Two warm foam-white panels, calendar left and query form right; fine blue-grey borders.
+Calendar month "Junio 2027", columns "L M X J V S D", exact rows:
+blank,1,2,3,4,5,6
+7,8,9,10,11,12,13
+14,15,16,17,18,19,20
+21,22,23,24,25,26,27
+28,29,30.
+June12-19 illustrative selected stay: dark-sea-blue endpoint circles, pale grey-blue connecting range including14; booked23-26 grey struck-through. Small season dots below dates, distinguish from selection.
+Legends "Disponible", "Reservado", "Selección".
+"Tarifas de ejemplo": "Baja 70 €/noche", "Media 90 €/noche", "Alta 120 €/noche".
+Right form "Consulta tu estancia", fields Llegada12/06/2027, Salida19/06/2027, Nombre, Email o teléfono, Mensaje. "7 noches × 90 €", bold "Total 630 €". Deep-blue CTA "Solicitar información". Small "Consulta sin compromiso. Confirmación personal." Outline contact buttons "Llamar" and "WhatsApp". No checkout, payments, invented phone numbers or instant bookings.
+
+7. DEEP-SEA BLUE footer #2E6982, cream type: "Apartamento en Gandía", "Playa de Gandía · Valencia", "robertoferrero.es/gandia", tiny "Acceso propietario".
+
+FINAL CHECK:
+Full page complete with footer. Photos and exact texts respected. Strong visible ALTERNATION: foam header / panorama / DEEP BLUE info / WARM SAND gallery / MID BLUE location / LIGHT SHORE availability / DEEP BLUE footer. The new infographic must be instantly recognizable as input2 and retain its full extent and coherent geography. No separate palette swatches or external annotations. No giant decoration, browser/device frame, ratings, fabricated facilities, discounts, invented route or watermark. Dates/prices remain clearly examples. Deliver one compelling realistic website mockup.
+

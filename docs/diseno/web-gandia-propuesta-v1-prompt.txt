@@ -1,0 +1,41 @@
+Propuesta visual de la web del apartamento de Gandía
+Fecha: 23 de octubre de 2026
+Método: herramienta integrada image_gen; sin CLI.
+Imagen final: web-gandia-propuesta-v1.png
+Estado: propuesta visual, pendiente de valoración. No es una web implementada.
+Las fechas, la disponibilidad, las temporadas y los precios representados son ejemplos de diseño.
+Las fotografías originales se usaron como referencias para la generación; en la implementación se utilizarán los originales.
+
+Referencias fotográficas, en orden:
+1. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/Material para la IA/Galeria de fotos/00 Vistas-1.jpeg
+2. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/Material para la IA/Galeria de fotos/03 Salon.jpeg
+3. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/Material para la IA/Galeria de fotos/01 Habitacion1.jpeg
+4. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/Material para la IA/Galeria de fotos/05 Cocina-1.jpeg
+5. D:/Trabajo/Proyectos_LEGION/26_905_Gandia/Material para la IA/Galeria de fotos/entorno.jpg
+
+PROMPT DE COMPOSICIÓN
+
+Use case: ui-mockup.
+Create ONE exceptionally polished high fidelity raster image of a complete DESKTOP apartment rental website, as a straight-on full-page screenshot, not a phone, not a perspective device mockup, no external canvas or annotations. Tall portrait canvas about 1600 by 2800 pixels, but wide desktop layout with horizontal navigation and multiple columns. All content in Spanish with crisp legible typography. This is a design proposal for robertoferrero.es/gandia, a real modest renovated apartment in Playa de Gandía, not an invented luxury villa.
+Input images are photographic compositing references: 1 panoramic view from the apartment toward green fields, Ahuir beach, sea and Cullera, use prominently for the hero; 2 real living room with grey sofa, orange curtains and white folding dining table; 3 real main bedroom with colorful patterned bedding; 4 real narrow orange-and-white kitchen; 5 actual wooden boardwalk through dunes to the beach, use in the environment section. Preserve their authentic architecture, furniture, colors and views; crop and adjust exposure gently for the layout, do not redesign rooms or invent amenities. The property must remain recognizable. Show only these actual reference photographs, not invented photographs of the other rooms.
+
+Visual direction: minimal, elegant Mediterranean editorial website, warm ivory and sand background, deep olive and charcoal text, restrained olive buttons, thin warm grey separators, generous spacing, beautiful refined readable serif headings paired with clean sans serif UI. Understated holiday accommodation design, no excessive rounded cards, no glossy gradients, no generic blue travel booking theme. Photographs should dominate and cover more than half the page. Consistent margins and grid, natural restrained color, large text hierarchy and readable small labels.
+
+TOP TO BOTTOM:
+1. Slim ivory navigation with textual identity "Apartamento en Gandía", links "El apartamento", "Entorno", "Disponibilidad", "Contacto", and olive button "Consultar fechas". No invented commercial brand or star ratings.
+2. Full-width dominant panorama using input image 1, with readable white left-aligned headline "Descansa junto a la playa del Ahuir." Small eyebrow "PLAYA DE GANDÍA · VALENCIA", short supporting text "Vistas abiertas, naturaleza y el mar a 100 metros." One white/ivory CTA "Descubre el apartamento". Subtle darkening only behind typography, retain green fields and sea; this is a genuine 10th-floor view, not a beachfront balcony scene.
+3. A discreet horizontal amenities row, tiny elegant line icons, labels "A 100 m de la playa", "Vistas desde la planta 10", "Parking incluido", "Piscinas para adultos y niños". No wifi or air conditioning claims.
+4. Spacious gallery section heading "Un espacio para desconectar", small text "Apartamento reformado, dos dormitorios y terraza." A refined navigation row lists "Todos", "Salón", "Dormitorios", "Cocina", "Baño", "Terraza" with Todos selected. Below, an editorial asymmetric photographic composition: one larger living room photo (image 2) alongside two smaller bedroom and kitchen photographs (images 3 and 4). Labels underneath "Salón", "Dormitorio principal", "Cocina equipada". Small text link "Ver todas las fotografías →". Only actual reference photographs. Simple clean margins between sections.
+5. Environment section with asymmetrical two-column editorial layout: large wide boardwalk photo from image 5 alongside compact text block "El lado más tranquilo de Gandía". Supporting text "Junto al Corredor Verd de l’Auir, entre la playa y la naturaleza." Small feature labels "Playa del Ahuir" and "Piscinas de la urbanización", and text link "Ver ubicación →". Do not invent a map, address or pool photograph.
+6. Availability section with strong heading "Elige tus días junto al mar". Small clear visible note "Calendario y tarifas de ejemplo". Elegant two-column layout: left a clear working-style calendar for "Junio 2027", right a simple inquiry form panel.
+Calendar has seven columns "L M X J V S D". Correct dates: first row blank,1,2,3,4,5,6; next 7,8,9,10,11,12,13; next 14,15,16,17,18,19,20; next 21,22,23,24,25,26,27; final 28,29,30. Illustrative selected stay June12 through June19 with 12 and19 distinctly circled and middle range filled soft olive, 19 checkout. Some unrelated unavailable days 23-26 grey and struck through. Tiny season indicators under dates, distinct from selected range and unavailable states. Visible legends for "Disponible", "Reservado", "Selección". Compact three-season tariff row clearly headed "Tarifas de ejemplo": "Baja · 70 €/noche", "Media · 90 €/noche", "Alta · 120 €/noche", use muted sage, sand and terracotta markers.
+Form heading "Consulta tu estancia". Fields "Llegada" value "12/06/2027", "Salida" value "19/06/2027", "Nombre", "Email o teléfono", and a small "Mensaje" text area. Price summary "7 noches × 90 €" and bold "Total 630 €". CTA "Solicitar información". Small explanatory text "Consulta sin compromiso. Confirmación personal." Below, equal subtle contact options "Llamar" and "WhatsApp". NO checkout, NO payment, NO credit cards, NO instant booking or pay-now buttons. Do not invent a phone number or email. No need for guest capacity number, it is not confirmed.
+7. Calm minimal footer with "Apartamento en Gandía", "Playa de Gandía · Valencia", and "robertoferrero.es/gandia". Tiny unobtrusive footer link "Acceso propietario" reflects the private CMS; do not draw administrative controls in the public page.
+
+Constraints: exact readable Spanish labels, premium yet genuinely simple and attainable layout, no overflowing text, no duplicate calendar numbers, no decorative device shells, no watermark. Do not show unverified Booking discount, testimonials, review stars, commercial name, precise unit address, pool opening dates or unsupported facilities. ALL shown availability and monetary figures are fictional layout examples and MUST be visibly labeled as examples within the calendar section. The output is one coherent complete desktop website design image.
+
+PROMPT DE AJUSTE FINAL
+Referencia: imagen generada en el paso anterior.
+
+Use case: ui-mockup. Precise edit of the supplied website design screenshot. Keep the entire page design, dimensions, typography, photos, Spanish copy, calendar dates, price totals and every component exactly unchanged. Make ONLY one very small UI refinement in the June 2027 calendar: add a tiny colored circular season dot below the number inside every actual date cell, without covering numbers, and matching the existing tariff legend. Days 1–6: muted sage dots for Baja; days 7–20: sand/gold dots for Media; days 21–30: muted terracotta dots for Alta. Keep 12 and 19 as the selected endpoints and all existing range highlights; dots on endpoints must remain subtly visible below the circle. Keep days 23–26 grey and struck through as unavailable, with small season dots still visible below. Add one tiny readable caption immediately below the calendar grid and above the availability legend: "El punto indica la temporada". Preserve all original text, correct June2027 calendar, "Calendario y tarifas de ejemplo", "Tarifas de ejemplo", night rates 70/90/120 euros, 7 nights x90 total630, all image crops, and layout. No other changes or new elements.
+
