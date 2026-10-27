@@ -1,5 +1,9 @@
 node_modules/
 dist/
+dist-private/
+server/config.php
+server/calendar-source.php
+server/storage/
 .cache/
 .env
 .env.*

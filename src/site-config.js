@@ -1,33 +1,31 @@
 export const siteConfig = {
-  // Completar antes de publicar el formulario y los enlaces de contacto.
-  contact: { telephone: '', whatsapp: '', email: '' },
+  // Datos públicos de contacto facilitados por el propietario.
+  contact: { telephone: '+34 678 552 380', whatsapp: '+34678552380', email: 'hola@robertoferrero.es' },
   ownerUrl: '',
   mapsUrl: 'https://www.google.com/maps/place//@39.0174167,-0.1759939,1432m/data=!3m2!1e3!4b1?entry=ttu',
-  forecastUrl: 'https://www.aemet.es/es/eltiempo/prediccion/playas/norte-de-gandia-4613102',
 };
 
-// Fechas y precios ilustrativos, no disponibilidad real.
+// Tarifas confirmadas; las reservas se consultan en el servidor desde Google Calendar.
 // Cada reserva bloquea noches en [llegada, salida); la salida permite otro check-in.
 export const availability = {
-  demo: true,
+  demo: false,
+  source: 'google-ical',
   firstDate: '2027-01-01',
   lastDate: '2027-12-31',
   initialMonth: '2027-06-01',
-  initialArrival: '2027-06-12',
-  initialDeparture: '2027-06-19',
+  initialArrival: '',
+  initialDeparture: '',
   minimumNights: 1,
   maximumNights: 60,
+  cleaningFee: { maximumNights: 3, amount: 20 },
   seasons: [
-    { id: 'low', name: 'Baja', price: 70 },
-    { id: 'mid', name: 'Media', price: 90 },
-    { id: 'high', name: 'Alta', price: 120 },
+    { id: 'low', season: 'low', name: 'Baja', price: 60, months: [1, 2, 3, 4, 5, 10, 11, 12] },
+    { id: 'mid', season: 'mid', name: 'Media', price: 80, months: [6, 9] },
+    { id: 'july', season: 'high', name: 'Alta · julio', price: 110, months: [7] },
+    { id: 'august', season: 'high', name: 'Alta · agosto', price: 120, months: [8] },
   ],
-  // Reglas mensuales de ejemplo. Cada noche conserva su propia tarifa.
-  midSeasonMonths: [5, 6, 9],
-  highSeasonMonths: [7, 8],
-  reservations: [
-    { arrival: '2027-06-23', departure: '2027-06-27' },
-    { arrival: '2027-07-10', departure: '2027-07-17' },
-    { arrival: '2027-08-02', departure: '2027-08-16' },
-  ],
+  dateOverrides: [{ from: '2027-03-22', through: '2027-03-28', rateId: 'mid' }],
+  // Tres temporadas y cuatro tarifas, con excepción de Semana Santa.
+  // Cada noche conserva su tarifa, también al pasar de julio a agosto.
+  reservations: [],
 };

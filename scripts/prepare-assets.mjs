@@ -32,3 +32,7 @@ await convert(path.join(source, 'Galeria de fotos/entorno.jpg'), 'entorno', [140
 await convert(path.join(root, 'docs/diseno/ubicacion-3d-infografia-v1.png'), 'ubicacion', [960, 1774], 90);
 await convert(path.join(source, 'Ubicación/00 Ubicacion-3.jpeg'), 'plano', [1451], 94);
 console.log(`Imágenes optimizadas en public/images · ${(bytes / 1024 / 1024).toFixed(2)} MB en total.`);
+await import('./prepare-environment.mjs');
+await import('./prepare-pool.mjs');
+await import('./prepare-layout.mjs');
+await import('./prepare-featured.mjs');

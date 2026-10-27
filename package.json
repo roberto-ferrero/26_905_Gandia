@@ -7,10 +7,15 @@
   "engines": { "node": ">=22.12.0" },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/build-server.mjs",
     "preview": "vite preview",
     "test": "node --test tests/*.test.js",
-    "assets": "node scripts/prepare-assets.mjs"
+    "test:mail": "node --test tests/mail-backend.test.mjs",
+    "assets": "node scripts/prepare-assets.mjs",
+    "assets:environment": "node scripts/prepare-environment.mjs",
+    "assets:pool": "node scripts/prepare-pool.mjs",
+    "assets:layout": "node scripts/prepare-layout.mjs",
+    "assets:featured": "node scripts/prepare-featured.mjs"
   },
   "devDependencies": {
     "sharp": "0.35.5",

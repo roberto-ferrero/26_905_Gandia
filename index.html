@@ -4,10 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#2e6982" />
-    <meta name="description" content="Apartamento reformado en Gandía Playa, junto a la playa del Ahuir. Dos dormitorios, terraza, vistas desde la planta 10, parking y piscinas." />
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Alquila un apartamento en Gandía Playa para 4 personas, a 150 m de la playa. Dos dormitorios, terraza, piscina y parking incluido. Admite mascotas. Tarifas 2027." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://robertoferrero.es/gandia/" />
+    <link rel="sitemap" type="application/xml" href="https://robertoferrero.es/gandia/sitemap.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:url" content="https://robertoferrero.es/gandia/" />
+    <meta property="og:title" content="Apartamento en Gandía Playa con piscina y parking" />
+    <meta property="og:description" content="Para 4 personas, con 2 dormitorios y terraza, a 150 m de la playa. Mascotas permitidas. Consulta disponibilidad y tarifas 2027." />
+    <meta property="og:image" content="https://robertoferrero.es/gandia/images/salon-1-1600.webp" />
+    <meta property="og:image:alt" content="Salón del apartamento de Gandía Playa con salida a la terraza" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- SEO:SCHEMA -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Apartamento en Gandía Playa · Mar y naturaleza</title>
+    <title>Apartamento en Gandía Playa con piscina y parking | Alquiler</title>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -26,29 +37,44 @@
     </header>
 
     <main id="contenido">
-      <section class="hero" id="inicio" aria-labelledby="hero-title">
-        <img class="hero-image" src="/images/vistas-1600.webp" srcset="/images/vistas-960.webp 960w, /images/vistas-1600.webp 1600w" sizes="100vw" width="1600" height="719" fetchpriority="high" alt="Vistas desde el apartamento a los campos, la playa del Ahuir y el mar, con Cullera al fondo." />
+      <section class="hero" id="inicio" aria-labelledby="hero-title" aria-roledescription="carrusel">
+        <div class="hero-images" id="hero-images">
+          <img class="hero-image is-active" src="/images/playa-ahuir-1860.webp" srcset="/images/playa-ahuir-768.webp 768w, /images/playa-ahuir-1280.webp 1280w, /images/playa-ahuir-1860.webp 1860w" sizes="100vw" width="1860" height="840" fetchpriority="high" alt="Playa de l’Auir con arena, dunas y olas bajo la luz del atardecer." />
+        </div>
         <div class="hero-shade"></div>
         <div class="hero-content container">
-          <h3 class="hero-eyebrow">Apartamento en</h3>
-          <h1 id="hero-title">Gandía Playa</h1>
+          <h1 id="hero-title"><span class="hero-eyebrow">Alquiler de apartamento en</span>Gandía Playa</h1>
+          <div class="hero-offers" aria-label="Estancias de verano por quincena de 15 noches">
+            <p><strong>1.650 €</strong> por quincena en julio de 2027</p>
+            <p><strong>1.800 €</strong> por quincena en agosto de 2027</p>
+            <p class="hero-comparison">(aproximadamente un 40 % más barato de media que los anuncios comparados en booking.com)</p>
+          </div>
           <a class="button button-sand" href="#disponibilidad">Ver disponibilidad <span data-icon="arrow"></span></a>
         </div>
-        <div class="hero-caption"><span class="small-dot"></span> El Ahuir, desde nuestra terraza</div>
+        <div class="hero-footer container">
+          <div class="hero-controls" role="group" aria-label="Fotografías del entorno" hidden>
+            <button class="icon-button" id="hero-previous" type="button" aria-label="Fotografía anterior del hero"><span data-icon="chevron" class="rotate"></span></button>
+            <div class="hero-dots" id="hero-dots"></div>
+            <button class="icon-button" id="hero-next" type="button" aria-label="Fotografía siguiente del hero"><span data-icon="chevron"></span></button>
+            <button class="icon-button hero-playback" id="hero-playback" type="button" aria-label="Pausar rotación de fotografías"><span data-icon="pause"></span></button>
+          </div>
+          <div class="hero-caption"><span class="small-dot"></span><span id="hero-caption">Playa de l’Auir</span></div>
+        </div>
+        <p class="sr-only" id="hero-status" aria-live="polite" aria-atomic="true"></p>
       </section>
 
       <section class="quick-facts" aria-label="De un vistazo">
         <div class="facts-inner container">
-          <div class="fact"><span data-icon="steps"></span><div><h2>A pie a la orilla</h2><p>Tiempo por confirmar<br /><span>Playa a 100 m</span></p></div></div>
-          <div class="fact"><span data-icon="sun"></span><div><h2>Sol en la terraza</h2><p>Orientación por confirmar</p></div></div>
+          <div class="fact"><span data-icon="beach-umbrella"></span><div><h2>Junto a la playa.</h2><p>Playa a 150 m.</p></div></div>
           <div class="fact"><span data-icon="car"></span><div><h2>Parking incluido</h2><p>Dentro de la urbanización</p></div></div>
-          <a class="fact fact-link" data-forecast target="_blank" rel="noopener noreferrer"><span data-icon="waves"></span><div><h2>Viento y oleaje</h2><p>Consultar previsión <span data-icon="arrow"></span></p></div></a>
+          <div class="fact"><span data-icon="pool"></span><div><h2>Piscina</h2><p>Para adultos y niños</p></div></div>
+          <div class="fact"><span data-icon="wifi"></span><div><h2>WiFi</h2></div></div>
         </div>
       </section>
 
       <section class="apartment section-pad" id="apartamento" aria-labelledby="apartment-title">
         <div class="section-heading container">
-          <div><h2 id="apartment-title">El apartamento...</h2><p>Apartamento reformado, dos dormitorios y terraza.</p></div>
+          <div><h2 id="apartment-title">El apartamento</h2><p>Apartamento completo reformado para 4 personas, con dos dormitorios y terraza orientada al sur. Piscina comunitaria, parking incluido y mascotas permitidas, a unos 150 metros de la playa.</p></div>
           <div class="gallery-filters" aria-label="Filtrar fotografías por estancia"></div>
         </div>
         <div class="gallery" id="gallery" aria-label="Fotografías del apartamento"></div>
@@ -60,25 +86,29 @@
 
       <section class="location section-pad" id="entorno" aria-labelledby="location-title">
         <div class="container">
-          <div class="section-heading"><div><h2 id="location-title">Todo, a un paseo.</h2><p>Playa, naturaleza y Gandía a tu alrededor.</p></div><span class="section-kicker">ENTRE LA PLAYA Y LA NATURALEZA</span></div>
+          <div class="section-heading"><div><h2 id="location-title">El entorno</h2><p>Playa, naturaleza y Gandía a tu alrededor.</p></div><span class="section-kicker">ENTRE LA PLAYA Y LA NATURALEZA</span></div>
           <div class="location-layout">
             <div class="location-sidebar">
               <div class="map-controls" role="group" aria-label="Explorar el entorno">
-                <button type="button" data-place="apartment" aria-pressed="true"><span data-icon="pin"></span>Apartamento<span data-icon="arrow"></span></button>
-                <button type="button" data-place="parking" aria-pressed="false"><span data-icon="parking"></span>Parking<span data-icon="arrow"></span></button>
-                <button type="button" data-place="pools" aria-pressed="false"><span data-icon="pool"></span>Piscinas<span data-icon="arrow"></span></button>
-                <button type="button" data-place="beach" aria-pressed="false"><span data-icon="waves"></span>Playa<span data-icon="arrow"></span></button>
+                <button type="button" data-place="apartment" aria-pressed="true" aria-controls="environment-image place-detail"><span data-icon="pin"></span><span>Apartamento</span><span data-icon="arrow"></span></button>
+                <button type="button" data-place="beach" aria-pressed="false" aria-controls="environment-image place-detail"><span data-icon="beach-umbrella"></span><span>Playa de l’Auir</span><span data-icon="arrow"></span></button>
+                <button type="button" data-place="pool" aria-pressed="false" aria-controls="environment-image place-detail"><span data-icon="pool"></span><span>Piscina</span><span data-icon="arrow"></span></button>
+                <button type="button" data-place="corridor" aria-pressed="false" aria-controls="environment-image place-detail"><span data-icon="dune-tree"></span><span>Corredor Verd de l’Auir</span><span data-icon="arrow"></span></button>
+                <button type="button" data-place="promenade" aria-pressed="false" aria-controls="environment-image place-detail"><span data-icon="promenade"></span><span>Junto al paseo marítimo</span><span data-icon="arrow"></span></button>
               </div>
-              <div class="place-detail" aria-live="polite" aria-atomic="true"><h3 id="place-title">Vistas desde la planta 10</h3><p id="place-description">Gandiazar IV, al norte de Gandía Playa. Con el Ahuir y el Corredor Verd de l’Auir a tu lado.</p><a class="text-link" data-maps target="_blank" rel="noopener noreferrer">Cómo llegar <span data-icon="external"></span></a></div>
+              <div class="place-detail" id="place-detail" aria-live="polite" aria-atomic="true"><h3 id="place-title">Ubicación privilegiada.</h3><p id="place-description">Gandiazar IV, al norte de Gandía Playa. En una zona muy tranquila, conectada con Bus al pueblo y al puerto, y pegada a palmerales, naranjos y dunas.</p><a class="text-link" id="environment-directions" data-maps target="_blank" rel="noopener noreferrer">Cómo llegar <span data-icon="external"></span></a></div>
             </div>
             <div class="map-column">
               <div class="map-visual">
-                <img src="/images/ubicacion-1774.webp" srcset="/images/ubicacion-960.webp 960w, /images/ubicacion-1774.webp 1774w" sizes="(max-width: 760px) 100vw, 75vw" width="1774" height="887" loading="lazy" alt="Infografía del entorno de Gandiazar IV: edificios, piscinas, campos, dunas y playa del Ahuir." />
-                <div class="map-marker" id="map-marker" aria-hidden="true"><span class="marker-ring"></span><span class="marker-label">Gandiazar IV</span></div>
+                <img id="environment-image" src="/images/ubicacion-1774.webp" srcset="/images/ubicacion-960.webp 960w, /images/ubicacion-1774.webp 1774w" sizes="(max-width: 760px) 100vw, 75vw" width="1774" height="887" loading="lazy" alt="Infografía del entorno de Gandiazar IV, destacado junto a los campos y la playa del Ahuir." />
+                <div class="apartment-highlight" id="apartment-highlight" aria-hidden="true">
+                  <svg viewBox="0 0 1774 887" fill="none"><path class="building-outline" d="M365 547 595 372 640 393 640 497 401 617 374 596Z"/><path class="building-leader" d="M480 355v47l24 33"/></svg>
+                  <span class="building-label">Gandiazar IV<span>Tu apartamento</span></span>
+                </div>
                 <button class="map-expand icon-button" id="expand-map" type="button" aria-label="Ampliar infografía del entorno"><span data-icon="expand"></span></button>
                 <span class="map-disclaimer">Ilustración orientativa</span>
               </div>
-              <div class="map-caption"><span>Gandiazar IV · Bloque D · Planta 10</span><button class="text-link" id="view-plan" type="button">Ver plano de la urbanización <span data-icon="external"></span></button></div>
+              <div class="map-caption"><span id="environment-caption">Carrer de la Valldigna 19 - Gandía Playa</span><button class="text-link" id="view-plan" type="button">Ver plano de la urbanización <span data-icon="external"></span></button></div>
             </div>
           </div>
         </div>
@@ -86,7 +116,7 @@
 
       <section class="availability section-pad" id="disponibilidad" aria-labelledby="availability-title">
         <div class="container">
-          <div class="section-heading"><div><span class="eyebrow">TU PRÓXIMA ESCAPADA</span><h2 id="availability-title">Elige tus días</h2></div><span class="demo-badge"><span class="small-dot"></span> Calendario y tarifas de ejemplo</span></div>
+          <div class="section-heading"><div><span class="eyebrow">TU PRÓXIMA ESCAPADA</span><h2 id="availability-title">Elige tus días</h2></div><span class="demo-badge"><span class="small-dot"></span><span id="availability-status" role="status">Tarifas 2027 · Consultando disponibilidad…</span></span></div>
           <div class="booking-layout">
             <div class="calendar-card">
               <div class="calendar-heading"><button class="icon-button" id="previous-month" type="button" aria-label="Mes anterior"><span data-icon="chevron" class="rotate"></span></button><h3 id="calendar-month" aria-live="polite"></h3><button class="icon-button" id="next-month" type="button" aria-label="Mes siguiente"><span data-icon="chevron"></span></button></div>
@@ -94,34 +124,43 @@
               <div class="calendar-grid" id="calendar-grid" role="group" aria-labelledby="calendar-month" aria-describedby="calendar-hint"></div>
               <p class="calendar-hint" id="calendar-hint" aria-live="polite">Elige tu llegada y después tu salida.</p>
               <div class="calendar-legend"><span><i class="legend-dot available-dot"></i>Disponible</span><span><i class="legend-dot reserved-dot"></i>Reservado</span><span><i class="legend-dot selected-dot"></i>Selección</span></div>
-              <div class="rates"><p>Tarifas de ejemplo <span>por noche</span></p><div class="rate-list" id="rate-list"></div><small>El punto bajo cada día indica la temporada.</small></div>
+              <div class="rates"><p>Tarifas 2027 <span>por noche</span></p><div class="rate-list" id="rate-list"><!-- SEO:RATES --></div><small>Baja: enero–mayo, excepto Semana Santa, y octubre–diciembre. Media: junio, septiembre y del 22 al 28 de marzo de 2027 (ambos incluidos). Alta: julio y agosto.</small><small>Limpieza: cargo único de 20 € para estancias de 1 a 3 noches. A partir de 4 noches no se añade este cargo.</small><small>Sin círculo: baja · Verde: media · Un círculo naranja: julio · Dos círculos naranjas: agosto. Pasa el cursor sobre un día para ver su temporada y precio.</small></div>
             </div>
-            <form class="inquiry-card" id="contacto">
+            <form class="inquiry-card" id="contacto" method="post" action="api/inquiry.php">
               <div class="form-heading"><h3>Consulta tu estancia</h3><span data-icon="waves"></span></div>
               <div class="date-fields"><label>Llegada<input type="date" name="arrival" id="arrival" required /></label><label>Salida<input type="date" name="departure" id="departure" required /></label></div>
               <label>Nombre<input type="text" name="name" id="guest-name" autocomplete="name" maxlength="100" required /></label>
               <label>Email o teléfono<input type="text" name="contact" id="guest-contact" autocomplete="email" maxlength="160" required /></label>
               <label>Mensaje <span class="optional">(opcional)</span><textarea name="message" id="guest-message" rows="2" maxlength="1500" placeholder="Cuéntanos qué necesitas para tu estancia..."></textarea></label>
-              <div class="quote" aria-live="polite" aria-atomic="true"><div><p id="quote-detail">7 noches × 90 €</p><strong>Total orientativo</strong></div><strong id="quote-total">630 €</strong></div>
+              <div class="form-trap" aria-hidden="true"><label>Sitio web<input type="text" name="website" id="guest-website" tabindex="-1" autocomplete="off" maxlength="200" /></label></div>
+              <div class="quote" aria-live="polite" aria-atomic="true"><div><p id="quote-detail">Selecciona las fechas de tu estancia</p><strong>Total orientativo</strong></div><strong id="quote-total">—</strong></div>
               <p class="form-error" id="booking-error" role="status" hidden></p>
-              <button class="button button-sea submit-button" type="submit">Solicitar información <span data-icon="arrow"></span></button>
-              <p class="form-note">Consulta sin compromiso. Confirmación personal.<br /><span>Demo: la solicitud no se envía.</span></p>
+              <button class="button button-sea submit-button" type="submit" disabled>Solicitar información <span data-icon="arrow"></span></button>
+              <p class="form-note">Consulta sin compromiso. Confirmación personal.<br /><span id="inquiry-status" role="status" aria-live="polite">También puedes enviarnos tu consulta por WhatsApp.</span></p>
               <div class="contact-actions"><a class="button button-outline" data-contact="telephone"><span data-icon="phone"></span>Llamar</a><a class="button button-outline" data-contact="whatsapp"><span data-icon="whatsapp"></span>WhatsApp</a></div>
+              <p class="contact-details"><a data-contact="telephone" data-contact-label></a><a data-contact="email" data-contact-label></a></p>
             </form>
           </div>
         </div>
       </section>
+      <section class="faq section-pad" id="preguntas" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="section-heading"><div><span class="eyebrow">ANTES DE TU ESTANCIA</span><h2 id="faq-title">Preguntas sobre el apartamento</h2><p>Ubicación, servicios, tarifas y cómo consultar tu reserva.</p></div></div>
+          <div class="faq-list"><!-- SEO:FAQ --></div>
+          <p class="faq-contact">Contacto directo: <a href="tel:+34678552380">+34 678 552 380</a> · <a href="mailto:hola@robertoferrero.es">hola@robertoferrero.es</a></p>
+        </div>
+      </section>
     </main>
 
-    <footer class="site-footer"><div class="container footer-inner"><div><a class="brand" href="#inicio">Apartamento en Gandía<span class="brand-dot">.</span></a><p>Playa de Gandía · Valencia</p></div><div class="footer-links"><span>robertoferrero.es/gandia</span><a id="owner-link" hidden>Acceso propietario <span data-icon="external"></span></a></div></div></footer>
-    <noscript><p class="noscript-notice">Activa JavaScript para explorar las fotografías, consultar el calendario de ejemplo y preparar una solicitud.</p></noscript>
+    <footer class="site-footer"><div class="container footer-inner"><div><a class="brand" href="#inicio">Apartamento en Gandía<span class="brand-dot">.</span></a><p>Playa de Gandía · Valencia</p></div><div class="footer-links"><a href="#preguntas">Preguntas frecuentes</a><span>robertoferrero.es/gandia</span><a id="owner-link" hidden>Acceso propietario <span data-icon="external"></span></a></div></div></footer>
+    <noscript><p class="noscript-notice">Activa JavaScript para explorar las fotografías, consultar el calendario actualizado y enviar el formulario. También puedes llamar al +34 678 552 380 o escribir a hola@robertoferrero.es.</p></noscript>
 
     <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
       <div class="lightbox-top"><span id="lightbox-count"></span><button class="icon-button lightbox-close" type="button" data-close="lightbox" aria-label="Cerrar fotografía"><span data-icon="close"></span></button></div>
-      <div class="lightbox-stage"><button class="icon-button lightbox-prev" type="button" aria-label="Fotografía anterior"><span data-icon="chevron" class="rotate"></span></button><img id="lightbox-image" alt="" /><button class="icon-button lightbox-next" type="button" aria-label="Fotografía siguiente"><span data-icon="chevron"></span></button></div>
+      <div class="lightbox-stage"><button class="icon-button lightbox-prev" type="button" aria-label="Fotografía anterior"><span data-icon="chevron" class="rotate"></span></button><img id="lightbox-image" alt="" draggable="false" /><button class="icon-button lightbox-next" type="button" aria-label="Fotografía siguiente"><span data-icon="chevron"></span></button></div>
       <div class="lightbox-bottom"><div><h2 id="lightbox-title"></h2><p id="lightbox-detail"></p></div><span class="lightbox-tip">← → para explorar · Esc para cerrar</span></div>
     </dialog>
-    <dialog class="message-dialog" id="message-dialog" aria-labelledby="message-title"><button class="icon-button message-close" type="button" data-close="message-dialog" aria-label="Cerrar mensaje"><span data-icon="close"></span></button><span class="dialog-symbol" data-icon="waves"></span><h2 id="message-title"></h2><p id="message-description"></p><pre id="inquiry-summary" hidden></pre><button class="button button-sea" id="copy-inquiry" type="button" hidden><span data-icon="copy"></span>Copiar consulta</button><p id="copy-status" role="status"></p></dialog>
+    <dialog class="message-dialog" id="message-dialog" aria-labelledby="message-title"><button class="icon-button message-close" type="button" data-close="message-dialog" aria-label="Cerrar mensaje"><span data-icon="close"></span></button><span class="dialog-symbol" data-icon="waves"></span><h2 id="message-title"></h2><p id="message-description"></p><pre id="inquiry-summary" hidden></pre><div class="dialog-actions"><button class="button button-sea" id="copy-inquiry" type="button" hidden><span data-icon="copy"></span>Copiar consulta</button><a class="button button-outline" id="dialog-whatsapp" data-contact="whatsapp" hidden><span data-icon="whatsapp"></span>Continuar por WhatsApp</a></div><p id="copy-status" role="status"></p></dialog>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

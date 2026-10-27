@@ -31,10 +31,8 @@ export function seasonFor(value, config) {
   const date = parseDate(value);
   if (!date) throw new RangeError('Fecha no válida');
   const month = date.getUTCMonth() + 1;
-  const season = config.highSeasonMonths.includes(month)
-    ? 'high'
-    : config.midSeasonMonths.includes(month) ? 'mid' : 'low';
-  return config.seasons.find((entry) => entry.id === season);
+  const override = (config.dateOverrides || []).find((entry) => value >= entry.from && value <= entry.through);
+  return config.seasons.find((entry) => override ? entry.id === override.rateId : entry.months.includes(month));
 }
 
 export function quoteStay(arrival, departure, config) {
@@ -46,7 +44,7 @@ export function quoteStay(arrival, departure, config) {
     return { valid: false, message: 'Selecciona una estancia de hasta ' + config.maximumNights + ' noches.' };
   }
   if (arrival < config.firstDate || departure > addDays(config.lastDate, 1)) {
-    return { valid: false, message: 'El calendario de ejemplo está disponible para 2027.' };
+    return { valid: false, message: 'El calendario está disponible para 2027.' };
   }
   const breakdown = new Map();
   let total = 0;
@@ -61,7 +59,10 @@ export function quoteStay(arrival, departure, config) {
     row.total += season.price;
     breakdown.set(season.id, row);
   }
-  return { valid: true, nights, total, breakdown: [...breakdown.values()] };
+  const accommodationTotal = total;
+  const cleaningFee = nights <= (config.cleaningFee?.maximumNights ?? 0) ? config.cleaningFee.amount : 0;
+  total += cleaningFee;
+  return { valid: true, nights, total, accommodationTotal, cleaningFee, breakdown: [...breakdown.values()] };
 }
 
 export function monthCells(month) {

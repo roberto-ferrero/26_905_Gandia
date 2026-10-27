@@ -1,0 +1,7 @@
+{
+  "name": "gandia/calendar",
+  "description": "Lectura privada de disponibilidad desde iCalendar",
+  "type": "project",
+  "require": { "sabre/vobject": "5.0.0" },
+  "config": { "vendor-dir": "vendor/calendar", "allow-plugins": false }
+}
